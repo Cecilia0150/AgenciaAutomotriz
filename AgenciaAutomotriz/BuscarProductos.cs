@@ -61,12 +61,11 @@ namespace AgenciaAutomotriz
                         txtBuscar.Focus();
                     }
                     break;
-
-                    void Limpiar()
-                    {
-                        dtgvProductos.Visible = false;
-                    }
             }
+        }
+        void Limpiar()
+        {
+            dtgvProductos.Visible = false;
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -79,14 +78,6 @@ namespace AgenciaAutomotriz
             this.Close();
             AgregarProductos ap = new AgregarProductos();
             ap.Show();
-        }
-
-        
-
-        
-
-        
-
-        
+        }   
     }
 }

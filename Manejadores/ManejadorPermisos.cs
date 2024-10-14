@@ -49,7 +49,7 @@ namespace Manejadores
                     }
                     else if (nivel == "EMPLEADO")
                     {
-                        if (btn.Name.Contains("Admin") || btn.Name.Contains("Eliminar"))
+                        if (btn.Name.Contains("Herramientas") || btn.Name.Contains("Eliminar") || btn.Name.Contains("Herramientas"))
                         {
                             btn.Enabled = false;
                         }

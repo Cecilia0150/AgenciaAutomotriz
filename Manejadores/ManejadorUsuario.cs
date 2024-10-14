@@ -16,7 +16,6 @@ namespace Manejadores
         {
             try
             {
-                //Cambiar el ultimo null para que de los datos de usuarios
                 return b.comando($"insert into Permisos values (null,'{Nivel.Text}', '{Nic.Text}', '{Contrasena.Text}', null)");
             }
             catch (Exception)

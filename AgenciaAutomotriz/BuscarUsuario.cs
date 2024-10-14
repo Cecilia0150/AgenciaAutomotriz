@@ -25,8 +25,6 @@ namespace AgenciaAutomotriz
             au.Show();
         }
 
-      
-
         public void BtnCancelar_Click(object sender, EventArgs e)
         {
             Close();
@@ -85,22 +83,15 @@ namespace AgenciaAutomotriz
             }
         }
 
- 
         void Limpiar()
         {
             dtgvUsuarios.Visible = false;
         }
 
-
-
-
         public BuscarUsuario()
         {
             InitializeComponent();
             mu = new ManejadorUsuario();
-
         }
-
-
     }
 }

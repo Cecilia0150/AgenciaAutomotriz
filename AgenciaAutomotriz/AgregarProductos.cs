@@ -21,10 +21,10 @@ namespace AgenciaAutomotriz
             mp = new ManejadorProductos();
             if (BuscarProductos.codigoBarras > 0)
             {
-                txtCodigo.Text = BuscarHerramientas.codigoherramienta.ToString();
-                txtNombre.Text = BuscarHerramientas.Nombre.ToString();
-                txtDescripcion.Text = BuscarHerramientas.Descripcion.ToString();
-                txtMarca.Text = BuscarHerramientas.Marca.ToString();
+                txtCodigo.Text = BuscarProductos.codigoBarras.ToString();
+                txtNombre.Text = BuscarProductos.Nombre.ToString();
+                txtDescripcion.Text = BuscarProductos.Descripcion.ToString();
+                txtMarca.Text = BuscarProductos.Marca.ToString();
                 
             }
         }
@@ -39,10 +39,10 @@ namespace AgenciaAutomotriz
                 }
                 else
                 {
-                    mp.Modificar(BuscarHerramientas.codigoherramienta, txtNombre, txtDescripcion, txtMarca);
+                    mp.Modificar(BuscarProductos.codigoBarras, txtNombre, txtDescripcion, txtMarca);
                     Close();
-                    BuscarHerramientas bh = new BuscarHerramientas();
-                    bh.Show();
+                    BuscarProductos bp = new BuscarProductos();
+                    bp.Show();
                 }
             }
             else
